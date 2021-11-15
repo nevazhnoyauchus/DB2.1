@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="feabddfbed69408580e047a69d0c6330" Name="Diagram1">
+        <EntityTypeShape EntityType="AlenaDBModel.Animals" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="AlenaDBModel.FoodFirm" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="AlenaDBModel.Gender" Width="1.5" PointX="5.75" PointY="8.375" />
+        <EntityTypeShape EntityType="AlenaDBModel.PetCharacter" Width="1.5" PointX="5.25" PointY="3.625" />
+        <EntityTypeShape EntityType="AlenaDBModel.PetFood" Width="1.5" PointX="8.25" PointY="3.375" />
+        <EntityTypeShape EntityType="AlenaDBModel.PetGender" Width="1.5" PointX="0.75" PointY="0.875" />
+        <EntityTypeShape EntityType="AlenaDBModel.PetPass" Width="1.5" PointX="3" PointY="3" />
+        <EntityTypeShape EntityType="AlenaDBModel.PetTraits" Width="1.5" PointX="3" PointY="8.875" />
+        <EntityTypeShape EntityType="AlenaDBModel.Role" Width="1.5" PointX="5.75" PointY="11.375" />
+        <EntityTypeShape EntityType="AlenaDBModel.Users" Width="1.5" PointX="8" PointY="7.75" />
+        <AssociationConnector Association="AlenaDBModel.FK_PetPass_Animals" />
+        <AssociationConnector Association="AlenaDBModel.FK_PetFood_FoodFirm" />
+        <AssociationConnector Association="AlenaDBModel.FK_Users_Gender" />
+        <AssociationConnector Association="AlenaDBModel.FK_PetCharacter_PetPass" />
+        <AssociationConnector Association="AlenaDBModel.FK_PetCharacter_PetTraits" />
+        <AssociationConnector Association="AlenaDBModel.FK_PetFood_PetPass" />
+        <AssociationConnector Association="AlenaDBModel.FK_PetPass_PetGender" />
+        <AssociationConnector Association="AlenaDBModel.FK_Users_Role" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
